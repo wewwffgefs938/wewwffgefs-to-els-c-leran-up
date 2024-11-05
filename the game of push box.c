@@ -49,7 +49,7 @@ int main() {
         overgame(flag);
         switch (_getch()) { // get the key of keyboard
         case 's':
-            if (arrbox[y + 1][x] == 1) {
+            if (arrbox[y + 1][x] == 1 || arrbox[y + 1][x] == 4) {
                 break;
             }
             if (arrbox[y + 1][x] == 3) {
@@ -75,7 +75,7 @@ int main() {
             break;
 
         case 'w':
-            if (arrbox[y - 1][x] == 1) {
+            if (arrbox[y - 1][x] == 1 || arrbox[y - 1][x] == 4) {
                 break;
             }
             if (arrbox[y - 1][x] == 3) {
@@ -101,7 +101,7 @@ int main() {
             break;
 
         case 'a':
-            if (arrbox[y][x - 1] == 1) {
+            if (arrbox[y][x - 1] == 1 || arrbox[y][x - 1] == 4) {
                 break;
             }
             if (arrbox[y][x - 1] == 3) {
@@ -127,7 +127,7 @@ int main() {
             break;
 
         case 'd':
-            if (arrbox[y][x + 1] == 1) {
+            if (arrbox[y][x + 1] == 1 || arrbox[y][x + 1] == 4) {
                 break;
             }
             if (arrbox[y][x + 1] == 3) {
