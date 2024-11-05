@@ -19,7 +19,7 @@ int main(){
                     };
     int arr1[2][10] ={1,2,3,4,5,6,7,8,9,10,10,9,8,7,6,5,4,3,2,1};
 
-// So i can get a conclusion that is read x priorly and then to read the x of the next y;
+// So i can get a conclusion that is read x preferentially and then to read the x of the next y;
 // the way of save is same as one dimensional array;
 /*example:
     arr[0][0] 1x0
@@ -74,7 +74,7 @@ printf("the third example is:\n");
         },
         {
             {8,8,8,8},
-            {6,6,6,6},
+            {6,6,6,6},//the second 6 coordinate is arr[1][1][1];
             {1,3,4,5}
 
         }
@@ -93,7 +93,7 @@ printf("the third example is:\n");
         printf("\n");
         
     }
-    
+     
     
     return 0 ;
     
