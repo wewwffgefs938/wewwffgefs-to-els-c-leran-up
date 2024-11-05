@@ -3,11 +3,20 @@
 #include <windows.h>
 #include <conio.h>
 
+void overgame(int flag) {// overgame function
+    if (flag) {
+        printf("Game Over!\n");
+        system("pause");
+        exit(0);
+    }
+    return;
+}
+
 int main() {
 
     int arrbox[5][5] = { // a arr express area ,the 2 express the box
         {1, 1, 1, 1, 1},
-        {1, 0, 0, 0, 1},
+        {1, 4, 0, 0, 1},
         {1, 0, 2, 3, 1},
         {1, 0, 0, 0, 1},
         {1, 1, 1, 1, 1}
@@ -15,7 +24,7 @@ int main() {
 
     int x = 0, y = 0;      // to represent the coordinate of player
     int xbox = 0, ybox = 0; // to represent the coordinate of box
-
+    int flag = 0; // to represent the flag of game over
     while (1) {
         for (int i = 0; i < 5; i++) {
             for (int k = 0; k < 5; k++) {
@@ -29,7 +38,6 @@ int main() {
                 }
             }
         }
-
         system("cls"); // clear the screen
 
         for (int i = 0; i < 5; i++) { // print the area image
@@ -38,7 +46,7 @@ int main() {
             }
             printf("\n");
         }
-
+        overgame(flag);
         switch (_getch()) { // get the key of keyboard
         case 's':
             if (arrbox[y + 1][x] == 1) {
@@ -48,6 +56,13 @@ int main() {
                 if (arrbox[ybox + 1][xbox] == 1) {
                     arrbox[y][x] += 1;
                     arrbox[y + 1][x] -= 1;
+                    break;
+                }
+                else if (arrbox[ybox + 1][xbox] == 4) {
+                    arrbox[ybox + 1][xbox] -= 1;
+                    arrbox[ybox][xbox] -= 1;
+                    arrbox[y][x] -= 2;
+                    flag = 1;
                     break;
                 }
                 arrbox[ybox + 1][xbox] += 3;
@@ -69,6 +84,13 @@ int main() {
                     arrbox[y - 1][x] -= 1;
                     break;
                 }
+                else if (arrbox[ybox - 1][xbox] == 4) {
+                    arrbox[ybox - 1][xbox] -= 1;
+                    arrbox[ybox][xbox] -= 1;
+                    arrbox[y][x] -= 2;
+                    flag = 1;
+                    break;
+                }
                 arrbox[ybox - 1][xbox] += 3;
                 arrbox[ybox][xbox] -= 1;
                 arrbox[y][x] -= 2;
@@ -88,6 +110,13 @@ int main() {
                     arrbox[y][x - 1] -= 1;
                     break;
                 }
+                else if (arrbox[ybox][xbox - 1] == 4) {
+                    arrbox[ybox][xbox - 1] -= 1;
+                    arrbox[ybox][xbox] -= 1;
+                    arrbox[y][x] -= 2;
+                    flag = 1;
+                    break;
+                }
                 arrbox[ybox][xbox - 1] += 3;
                 arrbox[ybox][xbox] -= 1;
                 arrbox[y][x] -= 2;
@@ -105,6 +134,13 @@ int main() {
                 if (arrbox[ybox][xbox + 1] == 1) {
                     arrbox[y][x] += 1;
                     arrbox[y][x + 1] -= 1;
+                    break;
+                }
+                else if (arrbox[ybox][xbox + 1] == 4) {
+                    arrbox[ybox][xbox + 1] -= 1;
+                    arrbox[ybox][xbox] -= 1;
+                    arrbox[y][x] -= 2;
+                    flag = 1;
                     break;
                 }
                 arrbox[ybox][xbox + 1] += 3;
