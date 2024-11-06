@@ -6,11 +6,11 @@
 #include <time.h>
 
 
- void overgame(int flag);
- int getrandomnumber(int, int);
- int** initialize_area(int, int);
- int** setperson_box_end(int**, int, int);
- int inputsizeofarea();
+void overgame(int flag);
+int getrandomnumber(int, int);
+int** initialize_area(int, int);
+int** setperson_box_end(int**, int, int);
+int inputsizeofarea();
 
 
 int main() {
