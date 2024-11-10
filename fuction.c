@@ -123,32 +123,32 @@
 	//when we int the variable,array,fuction etc,it will be distribute in the memory by system,it put data in these memory.
 	//so address is a pointer number of the memory location.
 	//&;&a //& is a symbol to get adress of a,a is a variable.
-			int*** initialize_parray(int n,int j,int k) {
-				int*** p = (int***)malloc(sizeof(int**)*n); //allocate memory for a pointer variable
-				for(int i=0;i<n;i++)
-					p[i] = (int**)malloc(sizeof(int*)*j); //allocate memory for an array of pointers
-				for(int i=0;i<n;i++)
-					for(int z=0;z<k;z++)
-						p[i][z] = (int*)malloc(sizeof(int)*k); //allocate memory for an array of integers
-				return p; //return the pointer variable
-			}
-			int*** parry_func(int*** p){
-				int a = 10;
-				p[0][0][0] = a; //change the value of the memory location of a by pointer p.
-				return p;
-			}
-			//è®©æˆ‘ä»¬è¯´ä¸­æ–‡ï¼š
-			//æŒ‡é’ˆå°±æ˜¯æŒ‡å‘åœ°å€çš„æŒ‡æ ‡ï¼Œåœ°å€å°±æ˜¯å­˜å‚¨å˜é‡çš„é‚£ä¸ªå†…å­˜ç›’å­çš„ç¼–å·ã€‚
-			//ä¸€çº§æŒ‡é’ˆå˜é‡åªæŒ‡å‘ä¸€å—å†…å­˜ï¼ŒäºŒçº§æŒ‡é’ˆå˜é‡æŒ‡å‘ä¸€å—å†…å­˜ä¸­çš„ä¸€å—å†…å­˜ï¼Œä»¥æ­¤ç±»æŽ¨ã€‚
-			// æˆ–è€…è¯´ï¼Œæ¯ä¸€çº§æŒ‡é’ˆä»£è¡¨äº†ä¸€ä¸ªæ–¹å‘æˆ–è€…ä¸€ä¸ªèŒƒå›´ï¼Œè€Œäº›æ–¹å‘ä¸ŽèŒƒå›´éƒ½å¿…é¡»æœ‰ä¸€ä¸ªå…³è”ç‚¹ï¼Œæœ€ç»ˆä½œç”¨æŒ‡å‘äº†ä»£è¡¨åœ°å€å†…å­˜ç›’å­çš„é‚£ä¸ªæœ€ä½Žçº§æŒ‡é’ˆå˜é‡
-			//è™½ç„¶æ— è®ºå¤šå°‘çº§æŒ‡é’ˆï¼Œæœ€ç»ˆéƒ½æŒ‡å‘çš„æ˜¯åŒä¸€ç§å†…å­˜åœ°å€ï¼Œä½†æ˜¯çº§æ•°ï¼Œä»£è¡¨äº†èŒƒå›´ä¸Žæ–¹å‘çš„æŠ½è±¡ï¼Œå†³å®šäº†å®ƒä¸Žæ•°ç»„çš„å¿…ç„¶èžåˆå…³ç³»ï¼Œå› ä¸ºæ•°ç»„ä¹Ÿèƒ½ä»£è¡¨æ–¹å‘ä¸ŽèŒƒå›´çš„æŠ½è±¡,è€Œä¸”è¿™æ ·çš„æ•´ç†å¯ä»¥æé«˜å¯»æ‰¾åœ°å€çš„æ•ˆçŽ‡ã€‚
-			//example:
-			//æ€»çš„æ¥è¯´ï¼Œå‰é¢éƒ½æ˜¯å±è¯ï¼Œå¯¹äºŽä¸€çº§ä¸€çº§çš„åœ°å€ï¼ˆæŒ‡é’ˆï¼‰æ¥è¯´ï¼Œä¸Šä¸€çº§çš„åœ°å€å°±æ˜¯ä¸‹ä¸€çº§çš„æŒ‡é’ˆï¼Œè€Œæœ€åŽä¸€çº§çš„åœ°å€å°±æ˜¯å˜é‡çš„å®žé™…å€¼ã€‚
-			//æŒ‡é’ˆä¸æ˜¯æ•°ç»„ï¼ŒæŒ‡é’ˆåªæ˜¯åœ°å€çš„ä¸€ç§è¡¨ç¤ºæ–¹å¼ï¼Œæ•°ç»„åªæ˜¯ä¸€ç³»åˆ—çš„åœ°å€çš„é›†åˆã€‚
-			//ä¸€ä¸ªæŒ‡é’ˆæŒ‡å‘å¤šä¸ªåœ°å€çš„å¤åˆä½“ï¼Œå¤šä¸ªæŒ‡é’ˆç»„æˆçš„å°±æ˜¯åœ°å€çš„å¤åˆä½“ï¼ŒæŒ‡é’ˆå°±æ˜¯åœ°å€ï¼Œåœ°å€å°±æ˜¯æŒ‡é’ˆã€‚
-			//ä¹Ÿå°±è¯´æŒ‡é’ˆçš„å¤šçº§æŒ‡é’ˆçš„æœ¬è´¨å°±æ˜¯ä¸€ä¸ªåœ°å€çš„å¤åˆä½“ä¸­ï¼Œä¸€ä¸ªåœ°å€æŒ‡å‘å¤šä¸ªåœ°å€çš„å¤åˆä½“ï¼Œè¿™äº›åœ°å€å°±æ˜¯æ‰€è°“çš„æŒ‡é’ˆï¼Œè¿™æ˜¯å±‚å±‚é€’è¿›çš„ï¼Œå½“æŒ‡é’ˆçš„åœ°å€ä¸å†æ˜¯åœ°å€çš„å¤åˆä½“æ—¶ï¼Œè¿™ä¸ªæŒ‡é’ˆä»£è¡¨å°±æ˜¯ä¸€ä¸ªå˜é‡çš„åœ°å€ï¼Œä¹Ÿå°±æ˜¯æœ€åŽä¸€çº§æŒ‡é’ˆã€‚
-int main(){
-    int a = 10;
+int*** initialize_parray(int n, int j, int k) {
+	int*** p = (int***)malloc(sizeof(int**) * n); //allocate memory for a pointer variable
+	for (int i = 0; i < n; i++)
+		p[i] = (int**)malloc(sizeof(int*) * j); //allocate memory for an array of pointers
+	for (int i = 0; i < n; i++)
+		for (int z = 0; z < j; z++)
+			p[i][z] = (int*)malloc(sizeof(int) * k); //allocate memory for an array of integers
+	return p; //return the pointer variable
+}
+int*** parry_func(int*** p) {
+	int a = 10;
+	p[0][0][0] = a; //change the value of the memory location of a by pointer p.
+	return p;
+}
+//ÈÃÎÒÃÇËµÖÐÎÄ£º
+//Ö¸Õë¾ÍÊÇÖ¸ÏòµØÖ·µÄÖ¸±ê£¬µØÖ·¾ÍÊÇ´æ´¢±äÁ¿µÄÄÇ¸öÄÚ´æºÐ×ÓµÄ±àºÅ¡£
+//Ò»¼¶Ö¸Õë±äÁ¿Ö»Ö¸ÏòÒ»¿éÄÚ´æ£¬¶þ¼¶Ö¸Õë±äÁ¿Ö¸ÏòÒ»¿éÄÚ´æÖÐµÄÒ»¿éÄÚ´æ£¬ÒÔ´ËÀàÍÆ¡£
+// »òÕßËµ£¬Ã¿Ò»¼¶Ö¸Õë´ú±íÁËÒ»¸ö·½Ïò»òÕßÒ»¸ö·¶Î§£¬¶øÐ©·½ÏòÓë·¶Î§¶¼±ØÐëÓÐÒ»¸ö¹ØÁªµã£¬×îÖÕ×÷ÓÃÖ¸ÏòÁË´ú±íµØÖ·ÄÚ´æºÐ×ÓµÄÄÇ¸ö×îµÍ¼¶Ö¸Õë±äÁ¿
+//ËäÈ»ÎÞÂÛ¶àÉÙ¼¶Ö¸Õë£¬×îÖÕ¶¼Ö¸ÏòµÄÊÇÍ¬Ò»ÖÖÄÚ´æµØÖ·£¬µ«ÊÇ¼¶Êý£¬´ú±íÁË·¶Î§Óë·½ÏòµÄ³éÏó£¬¾ö¶¨ÁËËüÓëÊý×éµÄ±ØÈ»ÈÚºÏ¹ØÏµ£¬ÒòÎªÊý×éÒ²ÄÜ´ú±í·½ÏòÓë·¶Î§µÄ³éÏó,¶øÇÒÕâÑùµÄÕûÀí¿ÉÒÔÌá¸ßÑ°ÕÒµØÖ·µÄÐ§ÂÊ¡£
+//example:
+//×ÜµÄÀ´Ëµ£¬Ç°Ãæ¶¼ÊÇÆ¨»°£¬¶ÔÓÚÒ»¼¶Ò»¼¶µÄµØÖ·£¨Ö¸Õë£©À´Ëµ£¬ÉÏÒ»¼¶µÄµØÖ·¾ÍÊÇÏÂÒ»¼¶µÄÖ¸Õë£¬¶ø×îºóÒ»¼¶µÄµØÖ·¾ÍÊÇ±äÁ¿µÄÊµ¼ÊÖµ¡£
+//Ö¸Õë²»ÊÇÊý×é£¬Ö¸ÕëÖ»ÊÇµØÖ·µÄÒ»ÖÖ±íÊ¾·½Ê½£¬Êý×éÖ»ÊÇÒ»ÏµÁÐµÄµØÖ·µÄ¼¯ºÏ¡£
+//Ò»¸öÖ¸ÕëÖ¸Ïò¶à¸öµØÖ·µÄ¸´ºÏÌå£¬¶à¸öÖ¸Õë×é³ÉµÄ¾ÍÊÇµØÖ·µÄ¸´ºÏÌå£¬Ö¸Õë¾ÍÊÇµØÖ·£¬µØÖ·¾ÍÊÇÖ¸Õë¡£
+//Ò²¾ÍËµÖ¸ÕëµÄ¶à¼¶Ö¸ÕëµÄ±¾ÖÊ¾ÍÊÇÒ»¸öµØÖ·µÄ¸´ºÏÌåÖÐ£¬Ò»¸öµØÖ·Ö¸Ïò¶à¸öµØÖ·µÄ¸´ºÏÌå£¬ÕâÐ©µØÖ·¾ÍÊÇËùÎ½µÄÖ¸Õë£¬ÕâÊÇ²ã²ãµÝ½øµÄ£¬µ±Ö¸ÕëµÄµØÖ·²»ÔÙÊÇµØÖ·µÄ¸´ºÏÌåÊ±£¬Õâ¸öÖ¸Õë´ú±í¾ÍÊÇÒ»¸ö±äÁ¿µÄµØÖ·£¬Ò²¾ÍÊÇ×îºóÒ»¼¶Ö¸Õë¡£
+int main() {
+	int a = 10;
 	char b = 'a';
 	float c = 3.14; // a kind of variable can be saved in the memory by system.
 	//so the address is also can be saved in the memory as a variable.
@@ -157,5 +157,14 @@ int main(){
 	int*** array = initialize_parray(2, 3, 4); //initialize a 3D array
 	array = parry_func(array);
 	printf("%d", array[0][0][0]); // output: 10
+	printf("\n");
+	//printf("%d", ***array); // output: 0
+	for (int i = 0; i < 2; i++) {
+		for (int j = 0; j < 3; j++) {
+			free(array[i][j]); //free the memory of the array
+		}
+		free(array[i]); //free the memory of the array
+	}
+	free(array); //free the memory of the array
 	return 0;
 }

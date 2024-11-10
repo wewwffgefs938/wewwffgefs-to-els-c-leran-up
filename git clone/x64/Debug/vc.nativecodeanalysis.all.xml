@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?><DEFECTS><DEFECT>
+    <SFA>
+      <FILEPATH>D:\Learn\setC\git clone\</FILEPATH>
+      <FILENAME>fuction.c</FILENAME>
+      <LINE>132</LINE>
+      <COLUMN>11</COLUMN>
+    </SFA>
+    <DEFECTCODE>6011</DEFECTCODE>
+    <DESCRIPTION>取消对 NULL 指针“p[i]”的引用。</DESCRIPTION>
+    <FUNCTION>initialize_parray</FUNCTION>
+    <DECORATED>initialize_parray</DECORATED>
+    <FUNCLINE>126</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>D:\Learn\setC\git clone\</FILEPATH>
+        <FILENAME>fuction.c</FILENAME>
+        <LINE>127</LINE>
+        <COLUMN>8</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Learn\setC\git clone\</FILEPATH>
+        <FILENAME>fuction.c</FILENAME>
+        <LINE>128</LINE>
+        <COLUMN>10</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Learn\setC\git clone\</FILEPATH>
+        <FILENAME>fuction.c</FILENAME>
+        <LINE>128</LINE>
+        <COLUMN>19</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Learn\setC\git clone\</FILEPATH>
+        <FILENAME>fuction.c</FILENAME>
+        <LINE>129</LINE>
+        <COLUMN>7</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>declaration</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>“&lt;符号&gt;”可能为 NULL</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Learn\setC\git clone\</FILEPATH>
+        <FILENAME>fuction.c</FILENAME>
+        <LINE>128</LINE>
+        <COLUMN>25</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Learn\setC\git clone\</FILEPATH>
+        <FILENAME>fuction.c</FILENAME>
+        <LINE>128</LINE>
+        <COLUMN>19</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>branch</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>退出此循环(“i&lt;n”为 false)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Learn\setC\git clone\</FILEPATH>
+        <FILENAME>fuction.c</FILENAME>
+        <LINE>130</LINE>
+        <COLUMN>10</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Learn\setC\git clone\</FILEPATH>
+        <FILENAME>fuction.c</FILENAME>
+        <LINE>130</LINE>
+        <COLUMN>19</COLUMN>
+        <KEYEVENT>
+          <ID>3</ID>
+          <KIND>branch</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>进入此循环(假定“i&lt;n”)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Learn\setC\git clone\</FILEPATH>
+        <FILENAME>fuction.c</FILENAME>
+        <LINE>131</LINE>
+        <COLUMN>11</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Learn\setC\git clone\</FILEPATH>
+        <FILENAME>fuction.c</FILENAME>
+        <LINE>131</LINE>
+        <COLUMN>20</COLUMN>
+        <KEYEVENT>
+          <ID>4</ID>
+          <KIND>branch</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>进入此循环(假定“z&lt;j”)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Learn\setC\git clone\</FILEPATH>
+        <FILENAME>fuction.c</FILENAME>
+        <LINE>132</LINE>
+        <COLUMN>11</COLUMN>
+        <KEYEVENT>
+          <ID>5</ID>
+          <KIND>usage</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>已取消对“&lt;符号&gt;”的引用，但可能仍为 NULL</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT></DEFECTS>
