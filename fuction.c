@@ -137,16 +137,135 @@ int*** parry_func(int*** p) {
 	p[0][0][0] = a; //change the value of the memory location of a by pointer p.
 	return p;
 }
-//ÈÃÎÒÃÇËµÖĞÎÄ£º
-//Ö¸Õë¾ÍÊÇÖ¸ÏòµØÖ·µÄÖ¸±ê£¬µØÖ·¾ÍÊÇ´æ´¢±äÁ¿µÄÄÇ¸öÄÚ´æºĞ×ÓµÄ±àºÅ¡£
-//Ò»¼¶Ö¸Õë±äÁ¿Ö»Ö¸ÏòÒ»¿éÄÚ´æ£¬¶ş¼¶Ö¸Õë±äÁ¿Ö¸ÏòÒ»¿éÄÚ´æÖĞµÄÒ»¿éÄÚ´æ£¬ÒÔ´ËÀàÍÆ¡£
-// »òÕßËµ£¬Ã¿Ò»¼¶Ö¸Õë´ú±íÁËÒ»¸ö·½Ïò»òÕßÒ»¸ö·¶Î§£¬¶øĞ©·½ÏòÓë·¶Î§¶¼±ØĞëÓĞÒ»¸ö¹ØÁªµã£¬×îÖÕ×÷ÓÃÖ¸ÏòÁË´ú±íµØÖ·ÄÚ´æºĞ×ÓµÄÄÇ¸ö×îµÍ¼¶Ö¸Õë±äÁ¿
-//ËäÈ»ÎŞÂÛ¶àÉÙ¼¶Ö¸Õë£¬×îÖÕ¶¼Ö¸ÏòµÄÊÇÍ¬Ò»ÖÖÄÚ´æµØÖ·£¬µ«ÊÇ¼¶Êı£¬´ú±íÁË·¶Î§Óë·½ÏòµÄ³éÏó£¬¾ö¶¨ÁËËüÓëÊı×éµÄ±ØÈ»ÈÚºÏ¹ØÏµ£¬ÒòÎªÊı×éÒ²ÄÜ´ú±í·½ÏòÓë·¶Î§µÄ³éÏó,¶øÇÒÕâÑùµÄÕûÀí¿ÉÒÔÌá¸ßÑ°ÕÒµØÖ·µÄĞ§ÂÊ¡£
+void getaddress(float* p) {
+	printf("%f", *p); //output the value of the memory address of the pointer variable p.
+		// * ç”¨åœ¨è¾“å‡ºæ—¶ï¼Œå¯ä»¥ç†è§£ä¸ºè¡¨ç¤ºï¼Œè§£å¼•ç”¨ï¼Œå–å†…å®¹ã€‚
+		//& ç”¨åœ¨è¾“å…¥æ—¶ï¼Œå¯ä»¥ç†è§£ä¸ºï¼ŒåŒ…å†…å®¹ï¼Œå–åœ°å€ï¼Œåšå¼•ç”¨ã€‚
+	*p = 7.777; //change the value in the memory location of the variable p.so it is penetrability(free pass) of the program.
+				//but different the global can be use the name to pass,it is use the memory that never be free  adress to pass fuctuion to change the value.
+}
+//è®©æˆ‘ä»¬è¯´ä¸­æ–‡ï¼š
+//æŒ‡é’ˆå°±æ˜¯æŒ‡å‘åœ°å€çš„æŒ‡æ ‡ï¼Œåœ°å€å°±æ˜¯å­˜å‚¨å˜é‡çš„é‚£ä¸ªå†…å­˜ç›’å­çš„ç¼–å·ã€‚
+//ä¸€çº§æŒ‡é’ˆå˜é‡åªæŒ‡å‘ä¸€å—å†…å­˜ï¼ŒäºŒçº§æŒ‡é’ˆå˜é‡æŒ‡å‘ä¸€å—å†…å­˜ä¸­çš„ä¸€å—å†…å­˜ï¼Œä»¥æ­¤ç±»æ¨ã€‚
+// æˆ–è€…è¯´ï¼Œæ¯ä¸€çº§æŒ‡é’ˆä»£è¡¨äº†ä¸€ä¸ªæ–¹å‘æˆ–è€…ä¸€ä¸ªèŒƒå›´ï¼Œè€Œäº›æ–¹å‘ä¸èŒƒå›´éƒ½å¿…é¡»æœ‰ä¸€ä¸ªå…³è”ç‚¹ï¼Œæœ€ç»ˆä½œç”¨æŒ‡å‘äº†ä»£è¡¨åœ°å€å†…å­˜ç›’å­çš„é‚£ä¸ªæœ€ä½çº§æŒ‡é’ˆå˜é‡
+//è™½ç„¶æ— è®ºå¤šå°‘çº§æŒ‡é’ˆï¼Œæœ€ç»ˆéƒ½æŒ‡å‘çš„æ˜¯åŒä¸€ç§å†…å­˜åœ°å€ï¼Œä½†æ˜¯çº§æ•°ï¼Œä»£è¡¨äº†èŒƒå›´ä¸æ–¹å‘çš„æŠ½è±¡ï¼Œå†³å®šäº†å®ƒä¸æ•°ç»„çš„å¿…ç„¶èåˆå…³ç³»ï¼Œå› ä¸ºæ•°ç»„ä¹Ÿèƒ½ä»£è¡¨æ–¹å‘ä¸èŒƒå›´çš„æŠ½è±¡,è€Œä¸”è¿™æ ·çš„æ•´ç†å¯ä»¥æé«˜å¯»æ‰¾åœ°å€çš„æ•ˆç‡ã€‚
 //example:
-//×ÜµÄÀ´Ëµ£¬Ç°Ãæ¶¼ÊÇÆ¨»°£¬¶ÔÓÚÒ»¼¶Ò»¼¶µÄµØÖ·£¨Ö¸Õë£©À´Ëµ£¬ÉÏÒ»¼¶µÄµØÖ·¾ÍÊÇÏÂÒ»¼¶µÄÖ¸Õë£¬¶ø×îºóÒ»¼¶µÄµØÖ·¾ÍÊÇ±äÁ¿µÄÊµ¼ÊÖµ¡£
-//Ö¸Õë²»ÊÇÊı×é£¬Ö¸ÕëÖ»ÊÇµØÖ·µÄÒ»ÖÖ±íÊ¾·½Ê½£¬Êı×éÖ»ÊÇÒ»ÏµÁĞµÄµØÖ·µÄ¼¯ºÏ¡£
-//Ò»¸öÖ¸ÕëÖ¸Ïò¶à¸öµØÖ·µÄ¸´ºÏÌå£¬¶à¸öÖ¸Õë×é³ÉµÄ¾ÍÊÇµØÖ·µÄ¸´ºÏÌå£¬Ö¸Õë¾ÍÊÇµØÖ·£¬µØÖ·¾ÍÊÇÖ¸Õë¡£
-//Ò²¾ÍËµÖ¸ÕëµÄ¶à¼¶Ö¸ÕëµÄ±¾ÖÊ¾ÍÊÇÒ»¸öµØÖ·µÄ¸´ºÏÌåÖĞ£¬Ò»¸öµØÖ·Ö¸Ïò¶à¸öµØÖ·µÄ¸´ºÏÌå£¬ÕâĞ©µØÖ·¾ÍÊÇËùÎ½µÄÖ¸Õë£¬ÕâÊÇ²ã²ãµİ½øµÄ£¬µ±Ö¸ÕëµÄµØÖ·²»ÔÙÊÇµØÖ·µÄ¸´ºÏÌåÊ±£¬Õâ¸öÖ¸Õë´ú±í¾ÍÊÇÒ»¸ö±äÁ¿µÄµØÖ·£¬Ò²¾ÍÊÇ×îºóÒ»¼¶Ö¸Õë¡£
+//æ€»çš„æ¥è¯´ï¼Œå‰é¢éƒ½æ˜¯å±è¯ï¼Œå¯¹äºä¸€çº§ä¸€çº§çš„åœ°å€ï¼ˆæŒ‡é’ˆï¼‰æ¥è¯´ï¼Œä¸Šä¸€çº§çš„åœ°å€å°±æ˜¯ä¸‹ä¸€çº§çš„æŒ‡é’ˆï¼Œè€Œæœ€åä¸€çº§çš„åœ°å€å°±æ˜¯å˜é‡çš„å®é™…å€¼ã€‚
+//æŒ‡é’ˆä¸æ˜¯æ•°ç»„ï¼ŒæŒ‡é’ˆåªæ˜¯åœ°å€çš„ä¸€ç§è¡¨ç¤ºæ–¹å¼ï¼Œæ•°ç»„åªæ˜¯ä¸€ç³»åˆ—çš„åœ°å€çš„é›†åˆã€‚
+//ä¸€ä¸ªæŒ‡é’ˆæŒ‡å‘å¤šä¸ªåœ°å€çš„å¤åˆä½“ï¼Œå¤šä¸ªæŒ‡é’ˆç»„æˆçš„å°±æ˜¯åœ°å€çš„å¤åˆä½“ï¼ŒæŒ‡é’ˆå°±æ˜¯åœ°å€ï¼Œåœ°å€å°±æ˜¯æŒ‡é’ˆã€‚
+//ä¹Ÿå°±è¯´æŒ‡é’ˆçš„å¤šçº§æŒ‡é’ˆçš„æœ¬è´¨å°±æ˜¯ä¸€ä¸ªåœ°å€çš„å¤åˆä½“ä¸­ï¼Œä¸€ä¸ªåœ°å€æŒ‡å‘å¤šä¸ªåœ°å€çš„å¤åˆä½“ï¼Œè¿™äº›åœ°å€å°±æ˜¯æ‰€è°“çš„æŒ‡é’ˆï¼Œè¿™æ˜¯å±‚å±‚é€’è¿›çš„ï¼Œå½“æŒ‡é’ˆçš„åœ°å€ä¸å†æ˜¯åœ°å€çš„å¤åˆä½“æ—¶ï¼Œè¿™ä¸ªæŒ‡é’ˆä»£è¡¨å°±æ˜¯ä¸€ä¸ªå˜é‡çš„åœ°å€ï¼Œä¹Ÿå°±æ˜¯æœ€åä¸€çº§æŒ‡é’ˆã€‚
+
+/*
+	1,how to add the variable to save in the memory? :  use  the pointer variable that save the adress to point to the memory location of the variable.
+	2,how to get the adress of the variable? : use the & symbol to get the adress of the variable? ; use the symbol & to get.
+	3.how to through the pointer variable to get the value of the variable? : use the * symbol to get the value of the variable.
+	//and or if it is a various variables can use the name of pointer variable plus the index of pointer variable to get the final address of the variable.
+*/
+
+//array fuction:
+void array_print_func(int arr[], int len) {
+	for (int i = 0; i < len; i++) {
+		printf("%d ", arr[i]);
+	}
+	printf("\n");
+}
+
+
+//Recursion of functions:
+	//one sentence to express it: a function can call itself.
+void recursion_func_1() {
+	printf("recursion_func_1\n");
+	recursion_func_1();
+}
+
+void recursion_func_2() {
+	static int count = 0;
+	if (count < 10){
+		count++;
+		recursion_func_2();
+	}
+	printf("recursion_func_2\n"); //the recursion_func_2 will be called 10times and plus the first one ,so it will be print 11 times.if è¯­å¥åˆ¤æ–­å®Œåï¼Œçº¿ç¨‹å¹¶æ²¡æœ‰ç»“æŸï¼Œå †ç§¯çš„çº¿ç¨‹è¦è¢«ç»™äºˆæ‰§è¡Œç„¶åè¾“å‡º0.
+}
+
+void recursion_func_3(int n) {// to the each of the digit of the number
+	printf("%d ", n % 10);
+	n /= 10;
+	if (n > 0) {
+		recursion_func_3(n);//
+	}
+	else {
+		printf("\n");
+	}
+	printf("count>>>");
+}
+
+//
+int fibonacci(int n) {
+	static int x1 = 1, x2 = 1;
+	static int count = 2;
+	if (count == n) {
+		return x2;
+	}
+	else if (n == 1) {
+		return x1;
+	}
+	else if (n == 2) {
+		return x2;
+	}
+	else {
+		int temp = x1 + x2;
+		x1 = x2;
+		x2 = temp;
+		count++;
+		return fibonacci(n);
+	}
+}
+//other way to get the Fibonacci number:
+int fibonacci_num(int n) {
+	if (n == 1 || n == 2) {
+		return 1;
+	}
+	return fibonacci_num(n - 1) + fibonacci_num(n - 2);//é€’å½’çš„åˆ†æ”¯ä¸åˆå¹¶
+}
+
+//homework:
+	//monkey eat peach ,çŒ´å­æ‘˜äº†nä¸ªæ¡ƒå­,æ¯å¤©åƒä¸€åŠåŠ ä¸€ä¸ªï¼Œæœ€åä¸€å¤©æ—©ä¸Šå‘ç°åªå‰©ä¸€ä¸ªäº†ï¼Œåƒä¸äº†äº†ï¼Œè¯·é—®èƒ½åƒnå¤©çš„æƒ…å†µä¸‹ï¼Œä¸€å¼€å§‹æœ‰å‡ ä¸ªæ¡ƒå­
+int mokey_eat_peach(int days) {
+	static int n = 1;
+	days--;
+	if (days == 0) {
+		return n;
+	}
+	else {
+		n =(n + 1)*2;
+		mokey_eat_peach(days);
+	}
+}
+
+int me_eat_peach_func(int days) {
+	static int n = 1;
+	static int count = 1;
+	if (days == count) {
+		return n;
+	}
+	n = (n + 1) * 2;
+	count++;
+	me_eat_peach_func(days);
+}
+
+int meonkey_eat_peach_func(int days) {
+	static int n = 1;
+	days--;
+	if (days == 0) {
+		return n;
+	}
+	n = (n + 1) * 2;
+	return meonkey_eat_peach_func(days);
+}
+
+//é€’å½’å‡½æ•°çš„æ‰§è¡Œé€»è¾‘ï¼Œç‰¹åˆ«æ˜¯returnæ—¶ï¼Œä»æ ¹æœ¬ä¸Šæ¥çœ‹åº”è¯¥ä¸æŒ‡é’ˆçš„é€»è¾‘ç›¸å½“ï¼Œéƒ½æ˜¯é‡é€šè¿‡ç»“æ„ä½“çš„ä¼ é€’
+	//é€’å½’å°±åƒï¼Œå¦‚æœé—®é¢˜æ²¡æœ‰è§£å†³ï¼Œå°±è¦ç”¨åŒä¸€ä¸ªé“²å­ç»§ç»­æŒ–æ˜ï¼Œç›´åˆ°é—®é¢˜è¢«è§£å†³ä¸ºæ­¢ï¼Œè€Œå½“æ¯ä¸ªæŒ–æ˜çš„åŠ¨ä½œåé¢éƒ½è¢«å®‰æ’äº†å…¶ä»–åŠ¨ä½œï¼Œé‚£ä¹ˆè¿™äº›åŠ¨ä½œåº”è¯¥åœ¨é—®é¢˜è¢«æŒ–é€šå
+	//ä¸€å¹¶è¢«æ‰§è¡Œè¾“å‡º
 int main() {
 	int a = 10;
 	char b = 'a';
@@ -158,7 +277,12 @@ int main() {
 	array = parry_func(array);
 	printf("%d", array[0][0][0]); // output: 10
 	printf("\n");
+	getaddress(&c); // output: 3.14 &c is the address of c,also as the pointer variable to point to the memory location of c.
 	//printf("%d", ***array); // output: 0
+	printf("\n");
+	printf("%f", c); // output: 7.777
+	printf("\t");
+
 	for (int i = 0; i < 2; i++) {
 		for (int j = 0; j < 3; j++) {
 			free(array[i][j]); //free the memory of the array
@@ -166,5 +290,32 @@ int main() {
 		free(array[i]); //free the memory of the array
 	}
 	free(array); //free the memory of the array
+	
+
+	int arr[] = { 1, 2, 3, 4, 5 };
+	int len = sizeof(arr) / sizeof(arr[0]); //get the length of the array
+	array_print_func(arr, len); //output: 1 2 3 4 5
+
+	//recursion_func_1(); //output: recursion_func_1 recursion_func_1 recursion_func_1...
+	recursion_func_2(); //output: recursion_func_2 recursion_func_2 recursion_func_2...
+	int numb = 123456789;
+	recursion_func_3(numb); //output: 9 8 7 6 5 4 3 2 1
+
+	printf("\n");
+
+	int fib_num = fibonacci(10); //output: 55 the tenth number of the Fibonacci sequence.
+	printf("%d", fib_num);
+	printf("\n");
+	int peach_num = mokey_eat_peach(25); //when the number of peach express the days is reched,
+	printf("%d", peach_num);
+	printf("\n");
+	int me_peach_num = me_eat_peach_func(10); //output: 1023
+	printf("%d", me_peach_num);
+	printf("\n");
+	int meonkey_peach_num = meonkey_eat_peach_func(10); //output: 1023
+	printf("%d", meonkey_peach_num);
 	return 0;
 }
+
+//é€’å½’å‡½æ•°ï¼š
+	//æ ¹æœ¬ä¸Šæ¥çœ‹ï¼Œå°±æ˜¯ä¸æ–­åœ°ç”¨ä¸€ä¸ªå·¥å…·è¿›è¡Œé‡å¤åœ°åŠ¨ä½œï¼Œç›´åˆ°é—®é¢˜è¢«è§£å†³ï¼Œæœ‰æ•ˆè¿”å›å€¼è¢«äº§ç”Ÿï¼Œè¢«åˆå¹¶ï¼Œè¢«æå–ã€‚

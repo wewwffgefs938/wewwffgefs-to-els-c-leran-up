@@ -1,0 +1,7 @@
+﻿  fuction.c
+D:\Learn\setC\git clone\fuction.c(144,7): warning C4305: “=”: 从“double”到“float”截断
+D:\Learn\setC\git clone\fuction.c(271,12): warning C4305: “初始化”: 从“double”到“float”截断
+D:\Learn\setC\git clone\fuction.c(180,1): warning C4717: “recursion_func_1”: 如递归所有控件路径，函数将导致运行时堆栈溢出
+D:\Learn\setC\git clone\fuction.c(245,1): warning C4715: “mokey_eat_peach”: 不是所有的控件路径都返回值
+D:\Learn\setC\git clone\fuction.c(256,1): warning C4715: “me_eat_peach_func”: 不是所有的控件路径都返回值
+  git clone.vcxproj -> D:\Learn\setC\git clone\git clone\x64\Debug\git clone.exe
