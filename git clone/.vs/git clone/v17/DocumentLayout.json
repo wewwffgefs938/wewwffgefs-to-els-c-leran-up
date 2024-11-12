@@ -3,7 +3,7 @@
   "WorkspaceRootPath": "D:\\Learn\\setC\\git clone\\git clone\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8C60D23C-1B61-4904-BE4C-EC0641023D6C}|git clone.vcxproj|D:\\Learn\\setC\\git clone\\fuction.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{8C60D23C-1B61-4904-BE4C-EC0641023D6C}|git clone.vcxproj|D:\\Learn\\setC\\git clone\\pretreatment.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,14 +38,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "fuction.c",
-              "DocumentMoniker": "D:\\Learn\\setC\\git clone\\fuction.c",
-              "RelativeDocumentMoniker": "..\\fuction.c",
-              "ToolTip": "D:\\Learn\\setC\\git clone\\fuction.c",
-              "RelativeToolTip": "..\\fuction.c",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAYwCMBAAACAAAAAAAAAA==",
+              "Title": "pretreatment.c",
+              "DocumentMoniker": "D:\\Learn\\setC\\git clone\\pretreatment.c",
+              "RelativeDocumentMoniker": "..\\pretreatment.c",
+              "ToolTip": "D:\\Learn\\setC\\git clone\\pretreatment.c",
+              "RelativeToolTip": "..\\pretreatment.c",
+              "ViewState": "AgIAAF4AAAAAAAAAAAAcwGQAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2024-11-10T03:49:19.237Z",
+              "WhenOpened": "2024-11-12T08:33:07.099Z",
               "EditorCaption": ""
             }
           ]

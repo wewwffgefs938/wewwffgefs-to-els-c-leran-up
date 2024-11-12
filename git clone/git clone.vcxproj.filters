@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\fuction.c">
+    <ClCompile Include="..\pretreatment.c">
       <Filter>资源文件</Filter>
     </ClCompile>
   </ItemGroup>
