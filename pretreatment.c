@@ -2,7 +2,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-
+#include "h f/tool.h"
 //pretreatmanet learn  of c code 
 
 /*
@@ -44,12 +44,12 @@
 	#define gen2 sqrt(2)
 	#define ROW 10
 	#define COL 20 //it's easy to control the value of you need.
-	#define ÕûĞÎ int
-	#define ³¤ÕûĞÎ long long int
-	#define ¶ÌÕûĞÎ short int
-	#define ×Ö·û char
-	#define ×Ö·û´® char*
-	#define  ±äÁ¿A int_a
+	#define æ•´å½¢ int
+	#define é•¿æ•´å‹ long long int
+	#define çŸ­æ•´å‹ short int
+	#define å­—ç¬¦ char
+	#define å­—ç¬¦ä¸² char*
+	#define å˜é‡A int_a
 
 	//define format:
 		//#define macro name value don,t add ';' at the end of the line.
@@ -74,9 +74,18 @@
 	/*
 	* File includation:
 	* 	conception:
-	* 
+	*		the way of reference headfile.
 	*/
-
+	#include <stdlib.h>
+	#include "string.h"
+	//difference between #include "string.h" and #include <string.h>:
+	  //"" is used to represent the own defined path of head file while < > is used to represent the system path of head file. the own defined path have higher proirity than the system path in being searched and referenced firstly.
+		//if in the vs define the head file you can add the #program once to avoid the warning of recycling reference.
+	/*
+	* Conditional compilation:
+	* 	conception:
+	*		it is not need the extra head file to compilation program,so it is used the the start deal with head files as usual
+	*/
 
 int main() {
 	/*
@@ -97,8 +106,26 @@ int main() {
 		//define:
 			const int a = 10;//it is don't allow to change the value of a.
 			//so also it is must to be initialised at the beginning of the program.
-	ÕûĞÎ ±äÁ¿A = 10;
+
+	/*
+	æ•´å½¢ å˜é‡A = 10;
 	printf("%d\n", int_a);
 	return 0;
-	
+	*/
+	tool_function_1();
+
+#if 1
+	printf("1\n");
+#else 
+	printf("0\n");
+#endif
+int A = 10;
+#ifdef A
+	printf("A is defined\n");
+#else 
+	printf("A is not defined\n");
+#endif
+	// TO judge the macro defination.
+	return 0;
+
 }
