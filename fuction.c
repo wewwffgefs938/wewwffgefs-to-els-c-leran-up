@@ -263,6 +263,18 @@ int meonkey_eat_peach_func(int days) {
 	return meonkey_eat_peach_func(days);
 }
 
+void push1_10(){
+	static int count = 1;
+	if(count != 10){
+		count++;
+		push1_10();
+	}
+	static int i = 0;
+	i++;
+	printf("%d ", i);
+	
+}
+
 //递归函数的执行逻辑，特别是return时，从根本上来看应该与指针的逻辑相当，都是量通过结构体的传递
 	//递归就像，如果问题没有解决，就要用同一个铲子继续挖掘，直到问题被解决为止，而当每个挖掘的动作后面都被安排了其他动作，那么这些动作应该在问题被挖通后
 	//一并被执行输出
@@ -314,6 +326,12 @@ int main() {
 	printf("\n");
 	int meonkey_peach_num = meonkey_eat_peach_func(10); //output: 1023
 	printf("%d", meonkey_peach_num);
+
+
+
+	printf("\n");
+
+	push1_10();
 	return 0;
 }
 

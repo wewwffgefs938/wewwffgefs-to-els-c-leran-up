@@ -127,7 +127,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\fuction.c" />
+    <ClCompile Include="..\pretreatment.c" />
+    <ClCompile Include="..\tool.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\h f\tool.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
