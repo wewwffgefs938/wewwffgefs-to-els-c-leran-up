@@ -1,2 +1,3 @@
-﻿  pretreatment.c
+﻿  file handle.c
+D:\Learn\setC\git clone\file handle.c(25,7): warning C4101: “strc”: 未引用的局部变量
   git clone.vcxproj -> D:\Learn\setC\git clone\git clone\x64\Debug\git clone.exe
