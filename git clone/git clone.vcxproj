@@ -139,7 +139,13 @@
     <ClInclude Include="..\h f\tool.h" />
   </ItemGroup>
   <ItemGroup>
+    <Text Include="..\File\1.txt" />
+    <Text Include="..\File\3.txt" />
+    <Text Include="..\File\text1.txt" />
     <Text Include="..\File\Text_File_Test.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\File\image1.jpg" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

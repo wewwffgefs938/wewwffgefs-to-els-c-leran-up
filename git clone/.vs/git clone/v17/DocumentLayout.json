@@ -6,16 +6,28 @@
       "AbsoluteMoniker": "D:0:0:{8C60D23C-1B61-4904-BE4C-EC0641023D6C}|git clone.vcxproj|D:\\Learn\\setC\\git clone\\file handle.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8C60D23C-1B61-4904-BE4C-EC0641023D6C}|git clone.vcxproj|D:\\Learn\\setC\\git clone\\File\\Text_File_Test.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{8C60D23C-1B61-4904-BE4C-EC0641023D6C}|git clone.vcxproj|D:\\Learn\\setC\\git clone\\File\\text1.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8C60D23C-1B61-4904-BE4C-EC0641023D6C}|git clone.vcxproj|D:\\Learn\\setC\\git clone\\tool.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{8C60D23C-1B61-4904-BE4C-EC0641023D6C}|git clone.vcxproj|D:\\Learn\\setC\\git clone\\File\\image1.jpg||{58961B49-13E0-48C0-9258-13CBC4D40279}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C60D23C-1B61-4904-BE4C-EC0641023D6C}|git clone.vcxproj|D:\\Learn\\setC\\git clone\\File\\1.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C60D23C-1B61-4904-BE4C-EC0641023D6C}|git clone.vcxproj|D:\\Learn\\setC\\git clone\\File\\3.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8C60D23C-1B61-4904-BE4C-EC0641023D6C}|git clone.vcxproj|D:\\Learn\\setC\\git clone\\h f\\tool.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{8C60D23C-1B61-4904-BE4C-EC0641023D6C}|git clone.vcxproj|D:\\Learn\\setC\\git clone\\tool.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{8C60D23C-1B61-4904-BE4C-EC0641023D6C}|git clone.vcxproj|D:\\Learn\\setC\\git clone\\pretreatment.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C60D23C-1B61-4904-BE4C-EC0641023D6C}|git clone.vcxproj|D:\\Learn\\setC\\git clone\\File\\Text_File_Test.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -25,8 +37,22 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 11,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "1.txt",
+              "DocumentMoniker": "D:\\Learn\\setC\\git clone\\File\\1.txt",
+              "RelativeDocumentMoniker": "..\\File\\1.txt",
+              "ToolTip": "D:\\Learn\\setC\\git clone\\File\\1.txt",
+              "RelativeToolTip": "..\\File\\1.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-11-15T06:56:26.847Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1a46fd64-28d5-0019-8eb3-17a02d419b53}"
@@ -45,6 +71,10 @@
             },
             {
               "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
@@ -54,14 +84,39 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Text_File_Test.txt",
-              "DocumentMoniker": "D:\\Learn\\setC\\git clone\\File\\Text_File_Test.txt",
-              "RelativeDocumentMoniker": "..\\File\\Text_File_Test.txt",
-              "ToolTip": "D:\\Learn\\setC\\git clone\\File\\Text_File_Test.txt",
-              "RelativeToolTip": "..\\File\\Text_File_Test.txt",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAASAAAAAAAAAA==",
+              "Title": "text1.txt",
+              "DocumentMoniker": "D:\\Learn\\setC\\git clone\\File\\text1.txt",
+              "RelativeDocumentMoniker": "..\\File\\text1.txt",
+              "ToolTip": "D:\\Learn\\setC\\git clone\\File\\text1.txt",
+              "RelativeToolTip": "..\\File\\text1.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2024-11-14T09:18:39.589Z",
+              "WhenOpened": "2024-11-15T10:57:45.849Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "image1.jpg",
+              "DocumentMoniker": "D:\\Learn\\setC\\git clone\\File\\image1.jpg",
+              "RelativeDocumentMoniker": "..\\File\\image1.jpg",
+              "ToolTip": "D:\\Learn\\setC\\git clone\\File\\image1.jpg",
+              "RelativeToolTip": "..\\File\\image1.jpg",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2024-11-15T09:56:55.418Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "3.txt",
+              "DocumentMoniker": "D:\\Learn\\setC\\git clone\\File\\3.txt",
+              "RelativeDocumentMoniker": "..\\File\\3.txt",
+              "ToolTip": "D:\\Learn\\setC\\git clone\\File\\3.txt",
+              "RelativeToolTip": "..\\File\\3.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-11-15T07:46:56.774Z",
               "EditorCaption": ""
             },
             {
@@ -72,26 +127,27 @@
               "RelativeDocumentMoniker": "..\\file handle.c",
               "ToolTip": "D:\\Learn\\setC\\git clone\\file handle.c",
               "RelativeToolTip": "..\\file handle.c",
-              "ViewState": "AgIAADkAAAAAAAAAAAAAAEUAAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAAH4AAAAAAAAAAADwv3oAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2024-11-14T07:37:57.711Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "pretreatment.c",
-              "DocumentMoniker": "D:\\Learn\\setC\\git clone\\pretreatment.c",
-              "RelativeDocumentMoniker": "..\\pretreatment.c",
-              "ToolTip": "D:\\Learn\\setC\\git clone\\pretreatment.c",
-              "RelativeToolTip": "..\\pretreatment.c",
-              "ViewState": "AgIAAGwAAAAAAAAAAAAAAHoAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2024-11-12T08:33:07.099Z"
+              "DocumentIndex": 8,
+              "Title": "Text_File_Test.txt",
+              "DocumentMoniker": "D:\\Learn\\setC\\git clone\\File\\Text_File_Test.txt",
+              "RelativeDocumentMoniker": "..\\File\\Text_File_Test.txt",
+              "ToolTip": "D:\\Learn\\setC\\git clone\\File\\Text_File_Test.txt",
+              "RelativeToolTip": "..\\File\\Text_File_Test.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-11-14T09:18:39.589Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "tool.c",
               "DocumentMoniker": "D:\\Learn\\setC\\git clone\\tool.c",
               "RelativeDocumentMoniker": "..\\tool.c",
@@ -104,15 +160,29 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
+              "Title": "pretreatment.c",
+              "DocumentMoniker": "D:\\Learn\\setC\\git clone\\pretreatment.c",
+              "RelativeDocumentMoniker": "..\\pretreatment.c",
+              "ToolTip": "D:\\Learn\\setC\\git clone\\pretreatment.c",
+              "RelativeToolTip": "..\\pretreatment.c",
+              "ViewState": "AgIAAGwAAAAAAAAAAAAAAHoAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2024-11-12T08:33:07.099Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "tool.h",
               "DocumentMoniker": "D:\\Learn\\setC\\git clone\\h f\\tool.h",
               "RelativeDocumentMoniker": "..\\h f\\tool.h",
               "ToolTip": "D:\\Learn\\setC\\git clone\\h f\\tool.h",
               "RelativeToolTip": "..\\h f\\tool.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-11-13T08:30:02.1Z"
+              "WhenOpened": "2024-11-13T08:30:02.1Z",
+              "EditorCaption": ""
             }
           ]
         }

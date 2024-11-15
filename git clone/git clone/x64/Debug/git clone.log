@@ -1,3 +1,4 @@
 ﻿  file handle.c
+D:\Learn\setC\git clone\file handle.c(152,37): warning C4013: “strlen”未定义；假设外部返回 int
 D:\Learn\setC\git clone\file handle.c(25,7): warning C4101: “strc”: 未引用的局部变量
   git clone.vcxproj -> D:\Learn\setC\git clone\git clone\x64\Debug\git clone.exe
