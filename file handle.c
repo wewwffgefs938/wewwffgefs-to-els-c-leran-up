@@ -1,7 +1,7 @@
 ﻿#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <stdlib.h>
-
+#include <string.h>
 
 //FLIE
 //Type
@@ -106,8 +106,8 @@ int main() {
 
 	FILE* image_file;
 	FILE* text_file;
-	char* image_path = "D:\\Learn\\setC\\git clone\\File\\image1.jpg";
-	char* text_path = "D:\\Learn\\setC\\git clone\\File\\text1.txt";
+	const char* image_path = "D:\\Learn\\setC\\git clone\\File\\image1.jpg";
+	const char* text_path = "D:\\Learn\\setC\\git clone\\File\\text1.txt";
 	image_file = fopen(image_path, "rb");//the image file is binary file, so we need use "rb" mode to open it.
 	if (image_file == NULL) {
 		printf("Error: unable to open file\n");

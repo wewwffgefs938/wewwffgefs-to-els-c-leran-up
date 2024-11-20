@@ -24,6 +24,9 @@
     <ClCompile Include="..\file handle.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="..\define data type.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\h f\tool.h">

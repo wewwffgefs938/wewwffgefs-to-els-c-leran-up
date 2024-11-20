@@ -1,4 +1,15 @@
-﻿  file handle.c
-D:\Learn\setC\git clone\file handle.c(152,37): warning C4013: “strlen”未定义；假设外部返回 int
-D:\Learn\setC\git clone\file handle.c(25,7): warning C4101: “strc”: 未引用的局部变量
+﻿  define data type.cpp
+D:\Learn\setC\git clone\define data type.cpp(100,20): warning C4305: “=”: 从“double”到“float”截断
+D:\Learn\setC\git clone\define data type.cpp(146,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“size_t”
+      D:\Learn\setC\git clone\define data type.cpp(146,9):
+      请考虑在格式字符串中使用“%zd”
+  
+D:\Learn\setC\git clone\define data type.cpp(147,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“size_t”
+      D:\Learn\setC\git clone\define data type.cpp(147,9):
+      请考虑在格式字符串中使用“%zd”
+  
+D:\Learn\setC\git clone\define data type.cpp(148,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“size_t”
+      D:\Learn\setC\git clone\define data type.cpp(148,9):
+      请考虑在格式字符串中使用“%zd”
+  
   git clone.vcxproj -> D:\Learn\setC\git clone\git clone\x64\Debug\git clone.exe
