@@ -22,21 +22,8 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "define data type.cpp",
-              "DocumentMoniker": "D:\\Learn\\setC\\git clone\\define data type.cpp",
-              "RelativeDocumentMoniker": "..\\define data type.cpp",
-              "ToolTip": "D:\\Learn\\setC\\git clone\\define data type.cpp",
-              "RelativeToolTip": "..\\define data type.cpp",
-              "ViewState": "AgIAAF4AAAAAAAAAAAAtwHIAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-11-20T12:48:40.744Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1a46fd64-28d5-0019-8eb3-17a02d419b53}"
@@ -59,13 +46,26 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "define data type.cpp",
+              "DocumentMoniker": "D:\\Learn\\setC\\git clone\\define data type.cpp",
+              "RelativeDocumentMoniker": "..\\define data type.cpp",
+              "ToolTip": "D:\\Learn\\setC\\git clone\\define data type.cpp",
+              "RelativeToolTip": "..\\define data type.cpp",
+              "ViewState": "AgIAAKsAAAAAAAAAAAAkwKkAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-11-20T13:22:30.916Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
               "Title": "file handle.c",
               "DocumentMoniker": "D:\\Learn\\setC\\git clone\\file handle.c",
               "RelativeDocumentMoniker": "..\\file handle.c",
               "ToolTip": "D:\\Learn\\setC\\git clone\\file handle.c",
               "RelativeToolTip": "..\\file handle.c",
-              "ViewState": "AgIAAIQAAAAAAAAAAAAiwJ0AAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAAJ0AAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2024-11-19T10:37:16.124Z",
               "EditorCaption": ""
@@ -80,8 +80,7 @@
               "RelativeToolTip": "..\\h f\\tool.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-11-13T08:30:02.1Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-13T08:30:02.1Z"
             },
             {
               "$type": "Document",

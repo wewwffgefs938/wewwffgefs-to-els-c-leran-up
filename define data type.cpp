@@ -3,6 +3,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+
+#include <conio.h>
 /*
 
 1,strucutre definition
@@ -16,6 +18,17 @@
 
 	typedef:
 		make the other name for data type
+
+
+2,union definition:
+	memeory public: use the largest type of data,in one time save one time's varriable numbers's value
+	but it's will use the same sort head of foudation data way in struct to push memory clips
+3.enum definition:
+	memory is int size memory
+
+
+	conclusion:
+		struct --> union --> enum//run logic fountation progress
 */
 
 struct student {
@@ -115,6 +128,46 @@ struct str_memory_test {
 	int crr[2];
 };
 
+//**********************************************
+//union definition
+union union_a {
+	int a;
+	char b[10];
+	float c;
+};
+
+union union_b {
+	int a;
+	double b;
+	char c[10];
+	char t[20];
+	float d;
+	int p;
+	char s;
+	char k;
+};//最大为 double 8 bytes 覆盖所有 int float char 第一个盒子 8 ，覆盖上char[20] 要 3 个,所以覆盖完全是需要3个盒子也就是3个8 betty 大小的内存
+//猜测：这样的对齐保护了对应数据大小的内存地址的倍数关系，使得内存地址的连续性，使得指针好找数据对应的地址
+//或者是为了保护内存的完整性，使得整个程序使用的内存连续性更好
+
+//************************************
+//enum definition
+enum color {
+	red,//0 value of n = n - 1;
+	green,//1
+	blue,
+	yellow,
+	black,
+	white
+};
+
+enum direction {
+	up = 'w',
+	down = 's',
+	left = 'a',
+	right = 'd'
+};
+//占有内存小
+//存状态，相对于数组不用循环看值，直接用变量名直接看值，更方便，区块存储更直观
 int main() {
 	//how to use
 	student student_1 = { 2826610077,"Els_Rction",85.5 }; // it like a fuction mix the arr with mixed data type
@@ -176,8 +229,31 @@ int main() {
 	printf("%d\n", sizeof(struct stc_three));
 	printf("%d\n", sizeof(struct stc_four));
 	printf("%d\n", sizeof(struct stc_five));
-
-
+	printf("\n");
+	bool flag = false;
+	while (1) {
+		if (flag) break;
+		//system("cls");
+		switch (_getch()) {
+			case direction::up:
+				printf("up\n");
+				break;
+			case direction::down:
+				printf("down\n");
+				break;
+			case direction::left:
+				printf("left\n");
+				break;
+			case direction::right:
+				printf("right\n");
+				break;
+			default:
+				flag = true;
+				printf("大咩 搞错方向里~！\n");
+				break;
+		}
+	}
+	system("pause");
 	return 0;
 
 
