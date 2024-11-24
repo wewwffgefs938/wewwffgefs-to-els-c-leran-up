@@ -1,23 +1,4 @@
-﻿  define data type.cpp
-D:\Learn\setC\git clone\define data type.cpp(181,20): warning C4305: “=”: 从“double”到“float”截断
-D:\Learn\setC\git clone\define data type.cpp(227,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“size_t”
-      D:\Learn\setC\git clone\define data type.cpp(227,9):
-      请考虑在格式字符串中使用“%zd”
-  
-D:\Learn\setC\git clone\define data type.cpp(228,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“size_t”
-      D:\Learn\setC\git clone\define data type.cpp(228,9):
-      请考虑在格式字符串中使用“%zd”
-  
-D:\Learn\setC\git clone\define data type.cpp(229,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“size_t”
-      D:\Learn\setC\git clone\define data type.cpp(229,9):
-      请考虑在格式字符串中使用“%zd”
-  
-D:\Learn\setC\git clone\define data type.cpp(230,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“size_t”
-      D:\Learn\setC\git clone\define data type.cpp(230,9):
-      请考虑在格式字符串中使用“%zd”
-  
-D:\Learn\setC\git clone\define data type.cpp(231,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“size_t”
-      D:\Learn\setC\git clone\define data type.cpp(231,9):
-      请考虑在格式字符串中使用“%zd”
-  
+﻿  pointer.cpp
+D:\Learn\setC\git clone\pointer.cpp(108,20): warning C4244: “return”: 从“double”转换到“int”，可能丢失数据
+D:\Learn\setC\git clone\pointer.cpp(109,19): warning C4244: “return”: 从“__int64”转换到“int”，可能丢失数据
   git clone.vcxproj -> D:\Learn\setC\git clone\git clone\x64\Debug\git clone.exe

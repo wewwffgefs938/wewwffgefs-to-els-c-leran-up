@@ -1,0 +1,13 @@
+﻿  define data type.cpp
+  pointer.cpp
+D:\Learn\setC\git clone\define data type.cpp(181,20): warning C4305: “=”: 从“double”到“float”截断
+  正在生成代码...
+  file handle.c
+D:\Learn\setC\git clone\file handle.c(25,7): warning C4101: “strc”: 未引用的局部变量
+  pretreatment.c
+  tool.c
+  正在生成代码...
+file handle.obj : error LNK2005: _main 已经在 define data type.obj 中定义
+pointer.obj : error LNK2005: _main 已经在 define data type.obj 中定义
+pretreatment.obj : error LNK2005: _main 已经在 define data type.obj 中定义
+D:\Learn\setC\git clone\git clone\Debug\git clone.exe : fatal error LNK1169: 找到一个或多个多重定义的符号
