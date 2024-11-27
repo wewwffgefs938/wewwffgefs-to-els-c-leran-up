@@ -1,12 +1,36 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\Learn\\setC\\git clone\\git clone\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8C60D23C-1B61-4904-BE4C-EC0641023D6C}|git clone.vcxproj|D:\\Learn\\setC\\git clone\\pointer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 1,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "pointer.cpp",
+              "DocumentMoniker": "D:\\Learn\\setC\\git clone\\pointer.cpp",
+              "RelativeDocumentMoniker": "..\\pointer.cpp",
+              "ToolTip": "D:\\Learn\\setC\\git clone\\pointer.cpp",
+              "RelativeToolTip": "..\\pointer.cpp",
+              "ViewState": "AgIAAIcBAAAAAAAAAAAYwKMBAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-11-25T10:33:32.545Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

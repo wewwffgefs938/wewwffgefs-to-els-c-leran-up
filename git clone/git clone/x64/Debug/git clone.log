@@ -1,4 +1,4 @@
 ﻿  pointer.cpp
-D:\Learn\setC\git clone\pointer.cpp(108,20): warning C4244: “return”: 从“double”转换到“int”，可能丢失数据
-D:\Learn\setC\git clone\pointer.cpp(109,19): warning C4244: “return”: 从“__int64”转换到“int”，可能丢失数据
+D:\Learn\setC\git clone\pointer.cpp(203,20): warning C4244: “return”: 从“double”转换到“int”，可能丢失数据
+D:\Learn\setC\git clone\pointer.cpp(204,19): warning C4244: “return”: 从“__int64”转换到“int”，可能丢失数据
   git clone.vcxproj -> D:\Learn\setC\git clone\git clone\x64\Debug\git clone.exe
